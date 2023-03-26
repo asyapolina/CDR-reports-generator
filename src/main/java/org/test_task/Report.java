@@ -122,7 +122,6 @@ public class Report {
              File reportFile = new File(dir,phoneNumber + ".txt");
              reportFile.createNewFile();
              FileOutputStream writer = new FileOutputStream(reportFile, false);
-//           writer = new BufferedWriter(new FileWriter(destDir + prefixDir + '/' + phoneNumber + ".txt"));
              writer.write(("Tariff index: " + tariff.name + "\n").getBytes());
              writer.write(("----------------------------------------------------------------------------\n").getBytes());
              writer.write(("Report for phone number " + phoneNumber + ":\n").getBytes());
