@@ -138,7 +138,7 @@ public class Report {
              writer.write(("----------------------------------------------------------------------------\n").getBytes());
              writer.write(String.format("|                                           Total Cost: |%10s rubles |\n", String.format("%.02f",totalCost)).getBytes());
              writer.write(("----------------------------------------------------------------------------\n").getBytes());
-
+             writer.close();
         } catch (IOException ex) {
             System.out.println("Can't save file " + ex.getMessage());
         }
